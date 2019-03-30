@@ -11,10 +11,12 @@ const getSeason = (lat, month) => {
 const SeasonDisplay = props => {
   const season = getSeason(props.lat, new Date().getMonth());
   const expression = season === 'winter' ? 'Dingin banget hari ini' : 'Saatnya ke Pantai!';
+  const icon = season === 'winter' ? 'snowflake' : 'sun';
   return (
     <div>
-      <h1>Season Display: { season }</h1>
+      <h1>Current season is: { season }</h1>
       <h3>{expression}</h3>
+      <i className={` huge yellow ${icon} icon`}/>
     </div>
   );
 };
