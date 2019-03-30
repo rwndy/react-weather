@@ -1,0 +1,33 @@
+
+.display-season, .winter {
+  background-color: #3498db;
+}
+
+.display-season, .sun {
+  background-color: #f39c12;
+}
+
+.icon-left {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.icon-right {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.display-season {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.text {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+}
